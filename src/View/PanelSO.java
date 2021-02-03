@@ -9,6 +9,7 @@ import Model.Proceso;
 import Model.SO;
 import Model.Usuario;
 import java.awt.Color;
+import java.awt.Dimension;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.BorderFactory;
@@ -27,6 +28,8 @@ public class PanelSO extends javax.swing.JFrame implements ActionListener{
     private final Usuario u = new Usuario(so);
         
     public PanelSO() {
+        this.setMinimumSize(new Dimension(1500,800));
+        this.setTitle("Simulador de Sistema Operativo - G2");
         initComponents();
     }
     
